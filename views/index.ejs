@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+        <a href="/new">Form Page</a>
+        
+        <% messages.forEach((message,i) => { %>
+            <div>
+                <p><%= message.text %></p>
+                <p><%= message.user %></p>
+                <p><%= message.added %></p>
+            </div>
+
+            <%if(i !== messages.length - 1) {%> 
+                <br />
+            <% } %>
+        <% }); %>
+</body>
+</html>
