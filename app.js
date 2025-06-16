@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require('path')
 const app = express();
+const port = process.env.PORT || 3001;
 
 const indexRouter = require("./routes/indexRouter");
 
@@ -12,7 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 
 
-const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`My first Express app - listening on port ${PORT}!`);
 });
