@@ -14,5 +14,5 @@ app.use("/", indexRouter);
 
 
 app.listen(port, () => {
-  console.log(`My first Express app - listening on port ${PORT}!`);
+  console.log(`My first Express app - listening on port ${port}!`);
 });
